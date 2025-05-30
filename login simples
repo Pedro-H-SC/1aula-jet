@@ -1,0 +1,28 @@
+'''
+
+Exercício: Crie um sistema de login simples que verifica se o usuário e senha estão corretos para então aprovar o login.
+
+
+
+'''
+
+print('  Criando conta')
+email=str(input('Digite o seu email:'))
+senha=int(input('Digite o sua Senha:'))
+if(email=='' ):
+    print('Email vazio incopativel.')
+elif(senha==''):
+    print('Senha vazio incopativel.')
+else:
+    print(' ')
+    print('         login')
+    email1=str(input('Digite o seu email:'))
+    senha1=int(input('Digite o sua Senha:'))
+    if(email!=email1 and senha!=senha1):
+        print('Email e senha incorretos')
+    elif(email!=email1):
+        print('Email incorreto.')
+    elif(senha!=senha1):
+        print('Senha incorreta.')
+    else:
+        print('Email e senha corretos.')
