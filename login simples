@@ -8,7 +8,7 @@ Exercício: Crie um sistema de login simples que verifica se o usuário e senha 
 
 print('  Criando conta')
 email=str(input('Digite o seu email:'))
-senha=int(input('Digite o sua Senha:'))
+senha=str(input('Digite o sua Senha:'))
 if(email=='' ):
     print('Email vazio incopativel.')
 elif(senha==''):
@@ -17,7 +17,7 @@ else:
     print(' ')
     print('         login')
     email1=str(input('Digite o seu email:'))
-    senha1=int(input('Digite o sua Senha:'))
+    senha1=str(input('Digite o sua Senha:'))
     if(email!=email1 and senha!=senha1):
         print('Email e senha incorretos')
     elif(email!=email1):
