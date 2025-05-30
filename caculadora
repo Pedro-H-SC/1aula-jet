@@ -1,0 +1,21 @@
+
+print ('Calculadora')
+
+calc=0
+valor1=int(input('Digite o primeiro valor:'))
+valor2=int(input('Digite o segundo valor:'))
+selec=int(input('Digite 1 para soma, digite 2 para subtração, digite 3 para multiplicar e digite 4 para divisão. (caso o numero fornecido não for correspondente não funcionara):'))
+if(selec==1):
+    calc=valor1+valor2
+    print('O resultado da soma é ',calc)
+elif(selec==2):
+    calc=valor1-valor2
+    print('O resultado da subtração é ',calc)
+elif(selec==3):
+    calc=valor1*valor2
+    print('O resultado da multiplicação é ',calc)
+elif(selec==4):
+    calc=valor1/valor2
+    print('O resultado da divisão é',calc)
+else:    
+    print('Numero selecionado invalido.')
