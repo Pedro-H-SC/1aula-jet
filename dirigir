@@ -1,0 +1,23 @@
+'''
+
+Faça um programa que cheque se uma pessoa está apta para dirigir (Só deve retornar que a pessoa pode dirigir se ela tiver 18+ e
+tiver carteira)
+
+
+'''
+
+nome=str(input('Digite seu nome:'))
+
+idade=int(input('Digite sua idade:'))
+
+carteira=str(input('Você possui carteira?(Sim ou Não):'))
+
+
+if(idade<1):
+    print('Idade invalida.')
+elif(carteira != 'sim' and 'não'): 
+    print('Resposta invalida para a carteira')
+elif(idade>=18 and carteira== 'sim' or 'Sim'):    
+    print('Você pode dirigir')
+else:
+    print('Você não pode dirigir')
