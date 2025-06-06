@@ -1,0 +1,13 @@
+
+frase=str(input("Digite uma frase: "))
+vogais=["a","e","i","o","u"]
+num=0
+for letra in frase:
+    letra+=""
+    if letra in vogais:
+        num+=1
+        print(letra)
+    else:
+        ponto=0
+print("Existem ",num," vogais na sua frase")
+
