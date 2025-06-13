@@ -1,0 +1,32 @@
+nomes=[]
+matriculas=[]
+ 
+def adicionar_aluno(nome, matricula):
+   
+    nomes.append(nome)
+   
+    matriculas.append(matricula)
+    
+
+def mostrar_nome_matriculas(): 
+    i=0
+    while i ==1:
+        i+=1
+        print(f'{nomes[i]},{matriculas(i)}')
+    
+   from aluno0 import adicionar_aluno,mostrar_nome_matriculas
+
+while True:
+    inicio = float(input("Digite 1 para a area do retangulo, digite 2 para a area do triangulo, digite 3 para a area do circulo, digite 4 para parar sair: (caso o numero fornecido não for correspondente não funcionara)"))
+    #nomes=[""]
+    #matriculas=[""]
+    if(inicio==1):
+        nome=str(input("Informe o nome do aluno: "))
+        matricula=int(input("Informe a matricula do aluno: "))
+        
+        add=adicionar_aluno(nome,matricula)
+        resultado=mostrar_nome_matriculas()
+        print(f"{resultado}")
+    else:
+        break
+        print('eror')
