@@ -1,0 +1,30 @@
+'''
+O segundo e principal arquivo, main_calculadora.py, importará essas funções. Este arquivo deve apresentar um menu interativo
+ao usuário (usando um loop while e condicionais if/elif/else) para que ele escolha qual cálculo fazer, solicite as dimensões
+e exiba o resultado utilizando as funções do módulo geometria.py.
+'''
+
+while True :
+
+    inicio = float(input("Digite 1 para a area do retangulo, digite 2 para a area do triangulo, digite 3 para a area do circulo, digite 4 para parar sair: (caso o numero fornecido não for correspondente não funcionara)"))
+    if(inicio==1):
+        base =float(input("Informe a base do retangulo: "))
+        altura=float(input("Informe a altura do retangulo: "))
+        from geometria import calcular_area_retangulo
+        resultado=calcular_area_retangulo(base,altura)
+        print(f"{resultado}")
+    if(inicio==2):
+        base =float(input("Informe a base do triangulo: "))
+        altura=float(input("Informe a altura do triangulo: "))
+        from geometria import calcular_area_triangulo
+        resultado=calcular_area_triangulo(base,altura)
+        print(f"{resultado}")
+    if(inicio==3):
+        raio =float(input("Informe o raio do circulo: "))
+        from geometria import calcular_area_circulo
+        resultado=calcular_area_circulo(raio)
+        print(f"{resultado}")
+    if(inicio==4):
+        break
+    else:
+        print("Numero não compativel com os valores(1,2,3,4)!")
