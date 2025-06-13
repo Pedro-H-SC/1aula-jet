@@ -1,0 +1,21 @@
+'''
+
+Crie uma função calcular_imc que recebe peso e altura como parâmetros.
+A função deve calcular o IMC (IMC = peso/(altura²)) e retornar o resultado.
+Depois chame a função e imprima o IMC para diferentes pessoas.
+
+'''
+def calcular_imc (peso,altura):
+    imc =peso/(altura**2)
+    return imc
+    
+def main() :   
+    peso1 = float(input("Digite seu peso: "))
+    altura2 = float(input("Digite sua altura: "))
+
+    pmc = calcular_imc(peso1, altura2) 
+
+    print(f"seu IMC é: {pmc}")
+
+
+main()
