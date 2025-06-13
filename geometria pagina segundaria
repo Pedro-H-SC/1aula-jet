@@ -1,0 +1,10 @@
+
+def calcular_area_retangulo(base,altura):
+    calculo=base*altura
+    return calculo
+def calcular_area_triangulo (base,altura):
+    calculo=(base*altura)/2
+    return calculo
+def  calcular_area_circulo (raio):
+    calculo=raio*3.14
+    return calculo
