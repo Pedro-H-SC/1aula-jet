@@ -1,0 +1,17 @@
+'''Crie um dicionário chamado livro com:
+titulo: "O Pequeno Príncipe"
+autor: "Antoine de Saint-Exupéry"
+ano_publicacao: 1943
+Adicione uma nova chave e valor ao dicionário: genero: "Fábula".
+Exiba o dicionário atualizado.
+Exiba o autor do livro usando o método .get().
+'''
+livro={
+
+    "titulo": "O Pequeno Príncipe",
+    "autor": "Antoine de Saint-Exupéry",
+    "ano_publicacao": 1943
+}
+livro["genero"]="Fabula"
+print(livro)
+print(f"Autor: {livro.get('autor')}")
