@@ -1,0 +1,40 @@
+alunos={1234:{
+        "nome":"marcelo"
+    }}
+
+
+def adicionar_aluno(nome,matricula):
+    num=1
+        
+    for item in alunos:
+        num+=1
+        item={matricula:{"nome":nome}}
+        
+        
+    return alunos
+    
+def mostrar_nome_matriculas(): 
+    'print(alunos[1234]["nome"])'    
+    for item in alunos:
+        print({item[1234]["nome"]})
+
+
+
+'''certo'''
+def main():
+    
+    while True:
+        inicio = float(input("Digite 1 para a area do retangulo, digite 2 para a area do triangulo, digite 3 para a area do circulo, digite 4 para parar sair: (caso o numero fornecido não for correspondente não funcionara)"))
+     
+        if inicio==1:
+            nome=input("Informe o nome do aluno: ")
+            matricula=input("Informe a matricula do aluno: ")
+            
+            adicionar_aluno(nome,matricula)
+            resultado=mostrar_nome_matriculas()
+            print(f"{resultado}")
+        else:
+            break
+            print('eror')
+
+main()
