@@ -1,0 +1,35 @@
+'''Cria uma classe ContaBancaria com o atributo _saldo.
+Use get para retornar o valor de _saldo.
+Crie o método depositar(valor), que adiciona valor ao _saldo. Adicione uma verificação para ver se o valor é positivo.
+Crie o método sacar(valor), que subtrai o valor de _saldo. Valide que o valor seja positivo e que haja _saldo suficiente.
+'''
+
+class ContaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo
+        
+    def get_saldo(self):
+        return self.__saldo
+        
+    def adicionar(self, valor):
+        if valor > 0:
+            self.__saldo += valor
+        else: 
+            print("Valor informado é invalido!(Numeros ivalidos são 0 e numeros negativos)")
+            return self.__saldo
+            
+    def retirar(self, valor):
+        if valor <= self.__saldo:
+            self.__saldo -= valor
+        else: 
+            print("Valor informado é superior ao saldo na conta, que é (",self.__saldo,")")
+            return self.__saldo
+
+a=ContaBancaria(0)
+print(a.get_saldo())
+valor=int(input("Digite o valor do seu deposito: "))
+a.adicionar(valor)
+print(a.get_saldo())
+valor2=int(input("Digite o valor do seu saque: "))
+a.retirar(valor2)
+print(a.get_saldo())
